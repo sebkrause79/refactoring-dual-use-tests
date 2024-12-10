@@ -4,16 +4,10 @@ namespace MyClasses.New
 {
     public class MyClass : IMyClass
     {
-        private IMyClass _vbOriginal;
+        private int _factor;
 
-        public MyClass(int factor)
-        {
-            _vbOriginal = new MyClasses.Old.MyClass(factor);
-        }
+        public MyClass(int factor) => _factor = factor;
 
-        public int Product(int value)
-        {
-            return _vbOriginal.Product(value);
-        }
+        public int Product(int value) => _factor * value;
     }
 }
