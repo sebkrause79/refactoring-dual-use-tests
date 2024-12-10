@@ -25,7 +25,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MyClasses.New\MyClasses.New.csproj" />
-    <ProjectReference Include="..\MyClasses.Old\MyClasses.Old.vbproj" />
   </ItemGroup>
 
   <ItemGroup>

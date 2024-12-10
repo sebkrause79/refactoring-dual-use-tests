@@ -1,13 +1,6 @@
-﻿using MyClasses.Old;
+﻿namespace MyClasses.New;
 
-namespace MyClasses.New
+public class MyClass(int factor)
 {
-    public class MyClass : IMyClass
-    {
-        private int _factor;
-
-        public MyClass(int factor) => _factor = factor;
-
-        public int Product(int value) => _factor * value;
-    }
+    public int Product(int value) => factor * value;
 }
